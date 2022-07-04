@@ -1,0 +1,14 @@
+<h1>Hola, aplicación desplegada en el Nodo 1</h1>
+
+	<%= form_tag print_path, data: { turbo: false }  do %>
+    <%= label_tag 'Print your name' %>
+    <%= text_field_tag :user, params[:user] %>
+    <%= submit_tag "Echo name", :class => '' %> </td>
+  <% end %>
+
+<h4>
+  <%= @user %>
+</h4>
+
+<%= image_tag ("pdc/indice.png") %>
+
