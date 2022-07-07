@@ -1,12 +1,16 @@
 TestApp2::Application.routes.draw do
-  
+  devise_for :users
+
   resources :home do
     collection do 
       get :index
     end
   end
 
+  
+
   post '/print' => 'home#print', :as => 'print' 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
